@@ -4,21 +4,23 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --hue: 194;
     --bg-color: hsl(var(--hue), 5%, 7%);
     --text-color: hsl(var(--hue), 40%, 98%);
     --primary-color: hsl(var(--hue), 100%, 63%);
-    --controls-bg-color:hsl(var(--hue), 0%, 14%);
-    --button-secondary: hsl(var(--hue), 40%, 98%)
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --button-secondary: hsl(var(--hue), 40%, 98%);
 
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
+
 html.light {
-    --bg-color: hsl(var(--hue), 40%, 98%);
     --text-color: hsl(var(--hue), 5%, 7%);
-    --controls-bg-color:hsl(var(--hue), 0%, 14%);
+    --bg-color: hsl(var(--hue), 40%, 98%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
 }
 
 html.light .ph-sun,
@@ -32,7 +34,6 @@ html:not(.light) .ph-moon {
     top: 3.2rem;
     font-size: 3.2rem;
     line-height: 0;
-
     color: var(--text-color);
 }
 
@@ -41,7 +42,6 @@ html:not(.light) .ph-moon {
     height: 1px;
     position: absolute;
     overflow: hidden;
-
     margin: -1px;
     padding: 0px;
     border: 0;
@@ -49,12 +49,12 @@ html:not(.light) .ph-moon {
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+background-color: var(--bg-color);
+color: var(--text-color);
 
-    display: grid;
-    height: 100Vh;
-    place-content: center;
+display: grid;
+height: 100vh;
+place-content: center;
 }
 
 #app {
@@ -84,15 +84,14 @@ button {
     background-color: transparent;
     border: 0;
     color: var(--primary-color);
-
     cursor: pointer;
-
     font-size: 6.4rem;
 }
 
 .secondary {
     color: var(--button-secondary);
 }
+
 
 /* controls */
 .running .ph-play-circle,
